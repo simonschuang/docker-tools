@@ -2,13 +2,23 @@ FROM ubuntu:trusty
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     apt-get install -y python \
-    make \
-    gcc \
-    lighttpd \
     bridge-utils \
+    gcc \
+    g++ \
+    lighttpd \
+    libbsd-dev \
+    libglib2.0-dev \
+    libgnet-dev \
+    libgoogle-glog-dev \
+    libnet1-dev \
     libpcap-dev \
-    valgrind \
+    libpoco-dev \
+    libssl-dev \
+    libzmq3-dev \
+    make \
+    subversion \
     tcpdump \
+    valgrind \
     vim && \
     apt-get clean
 
