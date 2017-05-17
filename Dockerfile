@@ -16,9 +16,14 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     libssl-dev \
     libzmq3-dev \
     make \
+    module-init-tools \
+    rfkill \
     subversion \
     tcpdump \
+    udev \
+    rfkill \
     valgrind \
+    wireless-tools \
     vim && \
     apt-get clean
 
