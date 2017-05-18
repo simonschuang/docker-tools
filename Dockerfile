@@ -24,7 +24,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     rfkill \
     valgrind \
     wireless-tools \
-    wireshark-gtk \
+    wireshark \
     vim && \
     apt-get clean
 
